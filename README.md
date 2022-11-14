@@ -6,7 +6,7 @@ A free lab from **HackTheBox**, can be found in here if still available: https:/
 ## User Own:
 Setting up VPN to access lab by the following command:
 
-sudo openvpn [your.ovpn file]
+`sudo openvpn [your.ovpn file]`
 
 ![1](https://user-images.githubusercontent.com/31168741/201707116-98e6a13c-2509-4771-9f91-15d231bf138e.PNG)
 
@@ -28,7 +28,7 @@ Following the scan report above, let's check the ip in browser since it shows ha
 
 Oops! If you ever face issues like this, just do the following:
 
-sudo nano /etc/hosts
+`sudo nano /etc/hosts`
 
 Type:
 
@@ -42,6 +42,8 @@ It worked!
 
 Look here and there to find sufficient clues around. I'm running some more tools such as:
 
-dirsearch -u http://[machine-ip]
+`dirsearch -u http://[machine-ip]`
+
+
 
 
