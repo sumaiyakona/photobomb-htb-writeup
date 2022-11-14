@@ -44,6 +44,6 @@ Look here and there to find sufficient clues around. I'm running some more tools
 
 `dirsearch -u http://[machine-ip]`
 
-
+dirb http://[machine-ip] /usr/share/dirb/wordlists/common.txt
 
 
