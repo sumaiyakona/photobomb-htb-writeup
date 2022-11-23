@@ -58,6 +58,10 @@ Let's look around for clues as to where we can find the credentials. Viewing pag
 
 ![13](https://user-images.githubusercontent.com/31168741/203570043-aa69c1e7-9556-4aa9-99b0-29c5bd9fc72d.PNG)
 
+Let's zoom it in.
+
+![13](https://user-images.githubusercontent.com/31168741/203590631-6c4124c3-7411-4852-8751-cea1e649bbde.PNG)
+
 Found user and pass. Let's try logging in!
 
 ![14](https://user-images.githubusercontent.com/31168741/203570096-e413c8e3-98ee-45bf-bfef-0ea898d786de.PNG)
