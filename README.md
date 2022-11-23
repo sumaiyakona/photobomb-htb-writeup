@@ -43,6 +43,23 @@ It worked!
 Look here and there to find sufficient clues around. I'm running some more tools such as:
 
 `dirsearch -u http://[machine-ip]`<br>
-`dirb http://[machine-ip] /usr/share/dirb/wordlists/common.txt`
+
+![11](https://user-images.githubusercontent.com/31168741/203568024-106123d0-9112-4ba7-a00c-df39b63725c2.PNG)
+
+From the above found directories:
+
+![10](https://user-images.githubusercontent.com/31168741/203569553-e7f4929d-10ea-45ac-a2f3-fe908b3ea09a.PNG)
+
+Let's look around for clues as to where we can find the credentials. Viewing page sources & inspecting might act benefitting.
+
+![8](https://user-images.githubusercontent.com/31168741/203569838-840fdb47-9844-488d-ad27-52ea89d1ecb8.PNG)
+
+![12](https://user-images.githubusercontent.com/31168741/203569955-c4b4ff0a-c559-4ac0-8cea-45ba2d020224.PNG)
+
+![13](https://user-images.githubusercontent.com/31168741/203570043-aa69c1e7-9556-4aa9-99b0-29c5bd9fc72d.PNG)
+
+Found user and pass. Let's try logging in!
+
+![14](https://user-images.githubusercontent.com/31168741/203570096-e413c8e3-98ee-45bf-bfef-0ea898d786de.PNG)
 
 
