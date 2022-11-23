@@ -38,7 +38,7 @@ Type:
 
 It worked!
 
-![7](https://user-images.githubusercontent.com/31168741/201709634-60a6c24f-9139-490d-9e89-5ff1f21662bf.PNG)
+![7](https://user-images.githubusercontent.com/31168741/203564356-ed8d8a73-8c2e-467b-8e79-df37fcdbf1b9.PNG)
 
 Look here and there to find sufficient clues around. I'm running some more tools such as:
 
