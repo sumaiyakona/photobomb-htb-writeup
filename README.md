@@ -85,6 +85,7 @@ We're in the target machine. Looking a little here and there helped me with the 
 
 ![20](https://user-images.githubusercontent.com/31168741/203584616-86f9d8fe-7590-4c27-938b-10b1f34d6690.PNG)
 
+## System Own:
 Second, to own the system, let's check the sudo rights: `sudo -l`.
 
 ![21](https://user-images.githubusercontent.com/31168741/203584890-1a8e1b17-0468-4ece-9b32-3eaf5c5b82c0.PNG)
